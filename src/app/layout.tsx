@@ -1,7 +1,9 @@
-import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+
 import SiteNav from '@/components/SiteNav'
+
+import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -10,22 +12,15 @@ export const metadata: Metadata = {
   description: 'Generate ideas for search and rescue trainings by mashing up different skills.',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.className}>
         <header>
           <SiteNav />
         </header>
-        <main className="max-w-7xl mx-auto">
-          {children}
-        </main>
-        <footer>
-        </footer>
+        <main className='max-w-7xl mx-auto'>{children}</main>
+        <footer></footer>
       </body>
     </html>
   )

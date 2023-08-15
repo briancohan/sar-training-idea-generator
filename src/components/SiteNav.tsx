@@ -5,15 +5,12 @@ import clsx from 'clsx'
 
 import { usePathname } from 'next/navigation'
 
-const navigation = [
-  { name: 'Home', href: '/' },
-]
+const navigation = [{ name: 'Home', href: '/' }]
 
 function isActiveRouteOrSubroute(pathname: string, href: string): boolean {
   if (href === '/' && pathname !== '/') return false
   return pathname.startsWith(href)
 }
-
 
 export default function NavBar() {
   const pathname = usePathname()
@@ -44,10 +41,7 @@ export default function NavBar() {
                         href={item.href}
                         className={clsx({
                           'text-zinc-600 bg-gray-300': isActiveRouteOrSubroute(pathname, item.href),
-                          'bg-white hover:text-zinc-800': !isActiveRouteOrSubroute(
-                            pathname,
-                            item.href,
-                          ),
+                          'bg-white hover:text-zinc-800': !isActiveRouteOrSubroute(pathname, item.href),
                           'rounded-md px-3 py-2 text-sm font-medium': true,
                         })}
                         aria-current={isActiveRouteOrSubroute(pathname, item.href) ? 'page' : undefined}>

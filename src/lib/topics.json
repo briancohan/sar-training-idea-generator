@@ -1,38 +1,17 @@
 {
   "Tracking": {
-    "Track and Sign Detection": [
-      "Soils",
-      "Vegetation",
-      "Hard Surface",
-      "Leaves",
-      "Other"
-    ],
+    "Track and Sign Detection": ["Soils", "Vegetation", "Hard Surface", "Leaves", "Other"],
     "Tools": [],
     "Interviewing": [],
-    "Recording": [
-      "Photographing",
-      "Drawing",
-      "Casting",
-      "Reporting"
-    ],
+    "Recording": ["Photographing", "Drawing", "Casting", "Reporting"],
     "Cold Cases": [],
     "Communication": [],
     "Working with K9s": [],
-    "Interpretation": [
-      "Animal Tracking",
-      "Identification",
-      "Aging",
-      "Direction of Travel"
-    ],
-    "Tactics": [
-      "Trailing"
-    ],
+    "Interpretation": ["Animal Tracking", "Identification", "Aging", "Direction of Travel"],
+    "Tactics": ["Trailing"],
     "PLS/LKP": [],
     "Night Tracking": [],
-    "Clues": [
-      "Clue Awareness",
-      "Clue Management"
-    ],
+    "Clues": ["Clue Awareness", "Clue Management"],
     "Evasive": []
   },
   "Ground": [
