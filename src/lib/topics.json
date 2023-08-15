@@ -1,0 +1,78 @@
+{
+  "Tracking": {
+    "Track and Sign Detection": [
+      "Soils",
+      "Vegetation",
+      "Hard Surface",
+      "Leaves",
+      "Other"
+    ],
+    "Tools": [],
+    "Interviewing": [],
+    "Recording": [
+      "Photographing",
+      "Drawing",
+      "Casting",
+      "Reporting"
+    ],
+    "Cold Cases": [],
+    "Communication": [],
+    "Working with K9s": [],
+    "Interpretation": [
+      "Animal Tracking",
+      "Identification",
+      "Aging",
+      "Direction of Travel"
+    ],
+    "Tactics": [
+      "Trailing"
+    ],
+    "PLS/LKP": [],
+    "Night Tracking": [],
+    "Clues": [
+      "Clue Awareness",
+      "Clue Management"
+    ],
+    "Evasive": []
+  },
+  "Ground": [
+    "SAR System",
+    "Critical Incident Stress Management (CISM)",
+    "Clue Awareness",
+    "Communications",
+    "Crime Scene Preservation",
+    "Disaster SAR / WAS",
+    "Land Navigation",
+    "Maps",
+    "Legal",
+    "Documentation",
+    "Litter Handling",
+    "Patient Packaging",
+    "Field Operations",
+    "Personal Equipment",
+    "Ropes",
+    "Knots",
+    "Strategy",
+    "Tactics",
+    "Team Composition",
+    "Lost Person Behavior",
+    "Wilderness Survival",
+    "Shelters",
+    "Fire Starting",
+    "GPS",
+    "Semi-tech",
+    "Team Leadershipo"
+  ],
+  "Management": [
+    "Reflex Tasking",
+    "Briefing / Debriefing",
+    "Mapping Software",
+    "Family Liaison",
+    "ICS Forms",
+    "Management Operations",
+    "Planning Processs",
+    "Logistics",
+    "Task Writing",
+    "Aircraft"
+  ]
+}
