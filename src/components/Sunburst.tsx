@@ -10,7 +10,11 @@ const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
 
 const formattedSunburstData = generateSunburstData(trainingTopics)
 
-const graphData: Partial<PlotData>[] = [
+interface SunburstPlotData extends PlotData {
+  insidetextorientation: string
+}
+
+const graphData: Partial<SunburstPlotData>[] = [
   {
     type: 'sunburst',
     insidetextorientation: 'radial',
