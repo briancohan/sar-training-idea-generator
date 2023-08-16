@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import clsx from 'clsx'
 
 import type { Metadata } from 'next'
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </header>
         <main className='max-w-7xl mx-auto'>{children}</main>
         <footer></footer>
+        <Analytics />
       </body>
     </html>
   )
