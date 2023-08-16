@@ -16,7 +16,6 @@ const graphData: Partial<PlotData>[] = [
     ids: formattedSunburstData.map((entry: SunburstData) => entry.id),
     labels: formattedSunburstData.map((entry: SunburstData) => entry.label),
     parents: formattedSunburstData.map((entry: SunburstData) => entry.parent),
-    marker: { line: { width: 8 } },
   },
 ]
 
