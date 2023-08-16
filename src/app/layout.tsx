@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -15,7 +17,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
+      <body
+        className={clsx(inter.className, 'relative bg-fixed bg-center bg-cover bg-no-repeat')}
+        style={{
+          background:
+            'linear-gradient(rgba(200, 200, 200, 0.9), rgba(200, 200, 200, 0.9)), url(images/topo_background.jpg)',
+        }}>
         <header>
           <SiteNav />
         </header>

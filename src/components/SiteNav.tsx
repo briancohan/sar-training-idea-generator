@@ -3,6 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navigation = [
@@ -20,7 +21,9 @@ export default function NavBar() {
   const pathname = usePathname()
 
   return (
-    <Disclosure as='nav' className='bg-white border-b border-zinc-300 mb-4'>
+    <Disclosure
+      as='nav'
+      className='bg-gradient-to-r to-red-600 from-blue-600 via-orange-600 border-b border-zinc-300 mb-4'>
       {({ open }) => (
         <>
           <div className='px-2 mx-auto max-w-7xl sm:px-6 lg:px-8'>
@@ -40,7 +43,7 @@ export default function NavBar() {
                 <div className='hidden sm:ml-6 sm:block'>
                   <div className='flex space-x-4'>
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
                         href={item.href}
                         className={clsx({
@@ -50,7 +53,7 @@ export default function NavBar() {
                         })}
                         aria-current={isActiveRouteOrSubroute(pathname, item.href) ? 'page' : undefined}>
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
