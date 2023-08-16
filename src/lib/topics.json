@@ -1,18 +1,51 @@
 {
   "Tracking": {
-    "Track and Sign Detection": ["Soils", "Vegetation", "Hard Surface", "Leaves", "Other"],
-    "Tools": [],
+    "Track and Sign Detection": {
+      "Soils": ["Pressure Releases"],
+      "Vegetation": ["Value", "Flagging", "Bruising", "Splits and Tears", "Creases"],
+      "Hard Surface": ["Depression", "Pocks", "Rotation", "Transfer"],
+      "Leaves": ["Creases", "Cracks", "Punctures", "Tears"]
+    },
+    "Tools": {
+      "Tangible": [
+        "Tracking Stick",
+        "Track Markers",
+        "Measuring Tape",
+        "String",
+        "Dividers and Calipers",
+        "Mirror",
+        "Tweezers",
+        "Camera",
+        "Casting Materials",
+        "Flashlights"
+      ],
+      "Intangible": ["Indexing", "Sun Angle", "Concentration"]
+    },
     "Interviewing": [],
     "Recording": ["Photographing", "Drawing", "Casting", "Reporting"],
     "Cold Cases": [],
     "Communication": [],
     "Working with K9s": [],
-    "Interpretation": ["Animal Tracking", "Identification", "Aging", "Direction of Travel"],
-    "Tactics": ["Trailing"],
-    "PLS/LKP": [],
+    "Interpretation": {
+      "Animal Tracking": ["Gait", "Scratches", "Scat", "Feeding"],
+      "Identification": [],
+      "Aging": [],
+      "Direction of Travel": ["Toe Dig", "Heel Dig"]
+    },
+    "Tactics": [
+      "Trailing",
+      "Feature Signcutting",
+      "Perimeter Signcutting",
+      "Cross Signcutting",
+      "Expanding Circle",
+      "Collapsing Circle",
+      "Leapfrogging"
+    ],
+    "PLS/LKP": ["Inventory and Elimination"],
     "Night Tracking": [],
-    "Clues": ["Clue Awareness", "Clue Management"],
-    "Evasive": []
+    "Clues": ["Clue Awareness", "Clue Management", "Track Preservation"],
+    "Evasive": [],
+    "Weather": []
   },
   "Ground": [
     "SAR System",

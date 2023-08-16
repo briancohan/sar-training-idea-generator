@@ -8,11 +8,12 @@ import trainingTopics from '@/lib/topics.json'
 
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
 
-const formattedSunburstData = generateSunburstData(trainingTopics, '')
+const formattedSunburstData = generateSunburstData(trainingTopics)
 
 const graphData: Partial<PlotData>[] = [
   {
     type: 'sunburst',
+    insidetextorientation: 'radial',
     ids: formattedSunburstData.map((entry: SunburstData) => entry.id),
     labels: formattedSunburstData.map((entry: SunburstData) => entry.label),
     parents: formattedSunburstData.map((entry: SunburstData) => entry.parent),

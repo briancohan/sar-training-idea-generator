@@ -5,7 +5,11 @@ import clsx from 'clsx'
 
 import { usePathname } from 'next/navigation'
 
-const navigation = [{ name: 'Home', href: '/' }]
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'Play', href: '/play' },
+  { name: 'Explore Topics', href: '/explore' },
+]
 
 function isActiveRouteOrSubroute(pathname: string, href: string): boolean {
   if (href === '/' && pathname !== '/') return false
