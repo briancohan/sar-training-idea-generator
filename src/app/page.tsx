@@ -26,13 +26,13 @@ export default function Home() {
               Develop new Trainig Ideas.
             </h2>
             <p className='mt-6 text-lg leading-8 text-gray-300'>
-              Training often focuses on one topic at a time. Make training more enjoyable by working a variety of topics
-              in a sincle activity!
+              Training often focuses on one topic at a time which can get repetitive. Make training more enjoyable by
+              working a variety of topics in a single activity!
             </p>
             <div className='mt-10 flex items-center justify-center gap-x-6 lg:justify-start'>
               <Link
                 href='/play'
-                className='rounded-md bg-white px-3.5 py-2.5 text-md font-bold text-orange-700 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'>
+                className='rounded-md tracking-wider bg-gradient-to-b from-orange-500 to-orange-700 px-3.5 py-2.5 text-md font-semibold text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white'>
                 Generate Ideas
               </Link>
               <Link href='/explore' className='text-sm font-semibold leading-6 text-white'>
